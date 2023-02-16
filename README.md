@@ -18,7 +18,7 @@ You can also use a different AMI for a specific CP component.
     dns_prefix    = "b1"                      //dns prefix used for this instance
     ip            = ["192.168.128.30"]
     ebs           = "50"
-    ami           = "ami-04968485dd11b9e88"   //Change AMI ID here
+    ami           = "ami-xxxxx"   //Change AMI ID here
   }
 ```
 
@@ -49,6 +49,9 @@ For the internal DNS:
 It creates a private zone using `{owner}.dev` format. e.g. `sishuo.dev`.
 
 Then the scripts add DNS records for both public and private zone. See below sections.
+
+### Firewall
+All traffics to the servers are allowed from your own public IPs. If you don't like this you can modify the security group part of the terraform code in the `main.tf`.
 
 ### From Your Laptop
 Add below lines to your `~/.ssh/config` file

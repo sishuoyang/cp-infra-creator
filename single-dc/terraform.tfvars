@@ -3,9 +3,10 @@ owner_name      = "sishuo" #make sure this can be used as part of dns domain
 
 # This is the public Route53 Zone for ps.confluent-internal.io
 # The script adds a record for each server to the zone using this naming convention: "{dns_prefix}.{owner_name}.{aws_dns_zone_domain}"
-aws_dns_zone_id     = "Z267DABJTL4JFI"
-aws_dns_zone_domain = "ps.confluent-internal.io"
-ec2_keypair_name    = "sishuo-keypair-sg"
+aws_dns_zone_id     = "xxxxx"
+aws_dns_zone_domain = "my.example.com"
+ec2_keypair_name    = "my-keypair"
+
 
 # Amazon Linux 2 AMI (HVM) - Kernel 5.10, SSD Volume Type
 # linux_ami_id           = "ami-0f62d9254ca98e1aa"

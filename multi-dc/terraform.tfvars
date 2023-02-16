@@ -3,21 +3,20 @@ owner_name      = "sishuo" #make sure this can be used as part of dns domain
 peer_owner_id   = "492737776546" #this is the account Id. You can get it from Aws console -> top right (click your user name)-> account -> account id
 # This is the public Route53 Zone for ps.confluent-internal.io
 # The script adds a record for each server to the zone using this naming convention: "{dns_prefix}.{owner_name}.{aws_dns_zone_domain}"
-aws_dns_zone_id     = "Z267DABJTL4JFI"
-aws_dns_zone_domain = "ps.confluent-internal.io"
-ec2_keypair_name    = "sishuo-keypair-sg"
+aws_dns_zone_id     = "xxxxx"
+aws_dns_zone_domain = "my.example.com"
+ec2_keypair_name    = "my-keypair"
 
 # Amazon Linux 2 AMI (HVM) - Kernel 5.10, SSD Volume Type
 # linux_ami_id           = "ami-0f62d9254ca98e1aa"
 
 # Red Hat Enterprise Linux 8 (HVM), SSD Volume Type, with JAVA17 installed & cp tar ball
-linux_ami_id = "ami-0f1204eaabe751007"
+# this can be public AMI or your own AMI
+linux_ami_id = "ami-xxxx"
 
 # Ubuntu Server 20.04 LTS (HVM), SSD Volume Type
 # linux_ami_id           = "ami-00e912d13fbb4f225"
 
-# sishuo ansible AMI
-# ami-0c01e25de0ea167ef
 
 dcs = [
   {
