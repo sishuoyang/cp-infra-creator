@@ -75,6 +75,13 @@ Replace `z1` with `z2` for other Zookeeper instances or `b1` for broker 1.
 
 This part is taken from the `terraform.tfvars` file -> components -> dns_prefix
 
+### IP Changed
+
+If you stopped your EC2 and restarted, the server will be assigned a different public IP.
+The public DNS records also need to be updated with the latest public IP.
+
+You can run `update-dns.sh` to update all DNS records.
+
 ### Within the VPC
 
 Servers can talk to each other using private DNS.
