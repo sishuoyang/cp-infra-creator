@@ -7,6 +7,11 @@ It creates:
 * 1 or 2 or 3 VPCs for multiple DC deployment
 * VPC network peerings, subnets, route table rules and security groups.
 
+## Prerequisite
+Install terraform on the machine where you wish to run the terraform script.
+
+https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+
 ## EC2
 The EC2 instance will be created using the AMI specified in the `linux_ami_id` variable of the `terraform.tfvars` file.
 You can also use a different AMI for a specific CP component.
@@ -28,8 +33,8 @@ You can also use a different AMI for a specific CP component.
 Assume you have AWS access key and secrets configured properly on your laptop.
 
 ```
-terraform init
-terraform apply -var="MY_IP=$(curl -s ifconfig.me)" -auto-approve
+terraform init ## This is only required for the first time.
+terraform apply -var="MY_IP=$(curl -s ifconfig.me)"
 ```
 
 ## Teardown
