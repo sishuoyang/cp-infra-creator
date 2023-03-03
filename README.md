@@ -16,7 +16,7 @@ https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 The EC2 instance will be created using the AMI specified in the `linux_ami_id` variable of the `terraform.tfvars` file.
 You can also use a different AMI for a specific CP component.
 
-```json
+```
   {
     instance_type = "t3.micro"                //instance type
     name          = "sishuo-ansible",         
